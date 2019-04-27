@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="../../favicon.ico" type="image/ico">
+	<title></title>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.js"></script>
+    <script type="text/javascript" src="app.js"></script>  
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/datatables.min.js"></script>
+    <script type="text/javascript" src="Semantic-UI-CSS-master/semantic.min.js"> </script>
+    <script type="text/javascript" src="Semantic-UI-Alert/Semantic-UI-Alert.js"> </script>
+
+                    <!--Cargar Factories js--> 
+    <script type="text/javascript" src="factories/MsgProvider.js"></script>
+
+                    <!--Cargar Controladores js-->    
+    <script type="text/javascript" src="views/OtherView/OtherView.Controller.js"></script>
+    <script type="text/javascript" src="views/UstData/UstData.Controller.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="css/styles-UST-Code.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.semanticui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/footer-distributed-with-address-and-phones.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<body ng-app="myApp">
+<!--Esta es el NavBar con las opciones principales-->
+
+<div class="headerMain">
+      <div class="ui five column stackable grid container" >
+        <div class="column">
+         
+        </div>
+        <div class="column">
+            
+        </div>
+        <div class="column">
+          <img class="ui big image" src="img/ustLogo.png">
+          <br>
+           
+        </div>
+        <div class="column">
+        
+        </div>
+      </div> 
+
+      <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <input type="text" placeholder="Search..">
+          </div>
+</div>
+
+
+<!--All The Application Will Be Rendered Here-->
+<div ng-view>
+
+</div>
+
+<div class="footerMain">
+    <div class="ui  vertical footer segment">
+        <div class="ui center aligned container">
+            <div class="ui horizontal inverted small divided link list">
+                <h2 class="ui header" align="center">
+                    <img src="img/appIcon-3.png">
+                        <div class="content">
+                            UST Code Challenge
+                        </div>
+                </h2>
+            </div>
+        </div>
+            <div class="ui horizontal inverted small divided link list">
+            </div>
+            <div class="ui horizontal inverted small divided link list">
+            </div>
+            <div class="ui horizontal inverted small divided link list">
+            </div>
+    </div>
+</div>
+
+
+</body>
+
+
+
+
+
+
+

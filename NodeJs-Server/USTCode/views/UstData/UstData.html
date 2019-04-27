@@ -1,0 +1,46 @@
+<div>
+    <br>
+    <div>
+      <div class="row" id="divContainerFormUSTDataTable">
+        <form class="ui form" id="formAddHouse">
+  
+        <div >
+         <table id="dtUSTData" class="ui fixed table ui selectable celled table" ng-init="ustData.retrieveData()">
+          <thead>
+            <tr>
+              <th class="center aligned" id="txtHeadersDataTable">Column 1</th>
+              <th class="center aligned" id="txtHeadersDataTable">Column 2</th>
+              <th class="center aligned" id="txtHeadersDataTable">Column 3</th>
+              <th class="center aligned" id="txtHeadersDataTable">Column 4</th>
+            </tr>
+          </thead>
+          <tbody> 
+            <tr ng-repeat="data in ustData.arrayUSTData">
+              <td class="center aligned" id="txtRowsDataTable">
+                <a href="#!OtherView"> {{data.id}}</a>
+              </td>
+              <td class="center aligned" id="txtRowsDataTable">
+                  <a href="#!OtherView"> {{data.title }}</a>
+              </td>
+              <td class="center aligned" id="txtRowsDataTable">
+                  <a href="#!OtherView"> {{data.completed }}</a>
+              </td>
+              <td class="center aligned" id="txtRowsDataTable">
+                  <a href="#!OtherView"> {{data.userId }}</a>
+              </td>
+              </td>
+            </tr>
+          </tbody>
+         </table>
+        </div>
+  
+        <br>
+    </form>
+      </div>
+    </div>
+  
+  
+    <!--Modal Messages Section-->
+  
+  </div>
+
